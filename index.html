@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+
+
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: linear-gradient(to bottom, white, blue);
+            color: black;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: lightslategrey;
+            margin-top: 0;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* Header Styles */
+        header {
+            background-color: palegreen;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid palegreen;
+        }
+
+
+        /* Navigation Styles */
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: #4abb4f;
+            border-radius: 40px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: black;
+        }
+
+
+        /* Social Media Styles */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, background-color 0.3s;
+            background-color: darkslateblue;
+            padding: 10px 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        
+        /* Contact Me Styles */
+        .contact-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            background-color:  darkslateblue;
+            padding: 10px 20px;
+            border-radius: 50px;    
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .contact-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+
+        
+        /* Footer Styles */
+        footer {
+            background-color: #4abb4f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 5px solid #4abb4f;
+            border-radius: 15px;
+        }
+
+        /* Additional Styles for Images with Text */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .image-with-text {
+            text-align: center;
+            margin: 20px;
+            position: relative;
+        }
+
+        .image-with-text img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-with-text p {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        .image-with-text:hover p {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <header>
+        <h1>A GLIMPSE OF BISHO'S LIFE</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#social">Social Media</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p> My name is Bishoy Mouris. I am a Bishoy is a second-year computer engineering student at the University of Debrecen.
+             I'm passionate about soccer and content creation. I spend my free time either playing or watching soccer matches. Additionally, I love creating content, whether through  making videos, or writing articles. My interests range from business management and entrepreneurship to developing innovative technologies.</p>
+    </section>
+
+    <section id="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="image-container">
+            <div class="image-with-text">
+                <img src="Soccer.jpg" alt="Soccer Image">
+                <p> Me playing a Soccer Match in Ohio, USA 2019/2020 Season </p>
+            </div>
+            <div class="image-with-text">
+                <img src="S.png" alt="Content Creation Image">
+                <p>My own YouTbe Channel</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="social">
+        <h2>Social Media</h2>
+        <div class="social-links">
+            
+            <a href="https://www.youtube.com/@bishoyghaly9569" target="_blank">YouTube</a>
+
+            <a href="https://www.linkedin.com/in/bishoy-mouris-331202243/" target="_blank">LinkedIn</a>
+         
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <a href="mailto:bishoymouris01@gmail.com"> Email Me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Bishoy Mouris 2024 Project</p>
+    </footer>
+
+</body>
+</html>
